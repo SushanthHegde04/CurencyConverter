@@ -1,0 +1,114 @@
+/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #343a40; /* Lightest color */
+    color: #495057; /* Darkest color for text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #6c757d; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #212529; /* Darkest shade for headings */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #6c757d; /* Medium-dark gray for labels */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.select-container .fromcontainer,
+.select-container .tocontainer {
+    flex: 1;
+    text-align: center;
+}
+
+.select-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 6px;
+    background-color: #ced4da; /* Light green background */
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.msg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#con {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d4a373; /* Accent color */
+}
+
+button#bt {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #ccd5ae; /* Light yellow background */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button#bt:hover {
+    background-color: #faedcd; /* Light orange on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
